@@ -26,11 +26,3 @@ console.log(peliculasFavoritas)
 
 edad = 25 + 1
 
-console.log(edad)
-
-seriesFavoritas.push(nombre = "Jumanji",
-año = 1994,
-protagonista = "Juma"        
-)
-
-console.log(seriesFavoritas)
