@@ -29,8 +29,8 @@ class Contenedor {
             let dataArchivo = await this.getData();
             let dataArchivoJson = JSON.parse(dataArchivo);
             let arreglo = [];
-            const indice = dataArchivoJson.map(x=>x.id).sort();
-            objeto.id = (indice[indice.lenght-1])+1
+            const indice = dataArchivoJson.length + 1;
+            objeto.id = indice;
 
             if(!objeto.id){
                 objeto.id = 1
@@ -108,7 +108,7 @@ const AMD = {
 
 const archivo = new Contenedor("archivo");
 /* archivo.getData() */
-/* archivo.save(Intel) */
+   archivo.save(AMD)
 /* archivo.getAll().then(x=>console.log(x)) */
 /* archivo.deleteAll() */
 /* archivo.deleteById(2) */
